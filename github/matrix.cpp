@@ -64,5 +64,10 @@ matrix& matrix::wstaw(int x, int y, int wartosc) {
 return *this;
 	}
 
+//pobieranie wartosci
+int matrix::pokaz(int x, int y) {
+	if (x >= 0 && x < n && y >= 0 && y < n) {
+		return data[x][y];
+	}
 
 
