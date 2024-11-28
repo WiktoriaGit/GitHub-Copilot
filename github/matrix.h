@@ -13,14 +13,14 @@ public:
 	matrix(); //konstruktor
 	matrix(int size); //konstruktor z parametrem
 	matrix(const matrix& m); //konstruktor kopiujacy
-	matrix(int size, int** t); //konstruktor z tablica
+	matrix(int size, int* t); //konstruktor z tablica
 	~matrix(); //destruktor
 	
 	//metody
-	matrix& allocate(int size); //alokacja pamieci
-	matrix& insert(int i, int j, int value); //wstawianie wartosci
-	int getValue(int i, int j); //pobieranie wartosci
-	matrix& transpose(); //transponowanie macierzy
+	matrix& alokuj(int size); //alokacja pamieci
+	matrix& wstaw(int x, int y, int wartosc); //wstawianie wartosci
+	int pokaz(int x, int y); //pobieranie wartosci
+	matrix& odwroc(); //odracanie macierzy
 	matrix& randomize(); //losowanie wype³nianie macierzy
 	matrix& randomize(int x); //losowanie wype³nianie okreslonej liczby elementow
 	matrix& diagonal(int* t); // wype³nienie przekatnej

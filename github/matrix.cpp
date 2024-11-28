@@ -27,6 +27,17 @@ matrix::matrix(const matrix& m) : n(m.n) {
 	}
 }
 
+//konstruktor z tablica
+matrix::matrix(int size, int* t) : n(size) {
+	data = new int* [n];
+	for (int i = 0; i < n; i++) {
+		data[i] = new int[n];
+		for (int j = 0; j < n; j++) {
+			data[i][j] = t[i * n + j];
+		}
+	}
+}
+
 //destruktor
 matrix::~matrix() {
 	for (int i = 0; i < n; i++) {
@@ -35,3 +46,37 @@ matrix::~matrix() {
 	delete[] data;
 }
 
+//alokacja pamieci
+matrix& matrix::alokuj(int size) {
+	n = size;
+	data = new int* [n];
+	for (int i = 0; i < n; i++) {
+		data[i] = new int[n];
+	}
+	return *this;
+}
+
+//wstawianie wartosci
+matrix& matrix::wstaw(int x, int y, int wartosc) {
+	if (x >= 0 && x < n && y >= 0 && y < n){
+		data[x][y] = wartosc;
+}
+return *this;
+	}
+
+//pobieranie wartosci
+int matrix::pokaz(int x, int y) {
+	if (x >= 0 && x < n && y >= 0 && y < n) {
+		return data[x][y];
+	}
+}
+
+//odracanie macierzy
+	matrix& matrix::odwroc() {
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < i; j++) {
+				swap(data[i][j], data[j][i]);
+			}
+		}
+		return *this;
+	}
