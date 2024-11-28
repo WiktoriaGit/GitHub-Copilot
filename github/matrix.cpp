@@ -27,3 +27,11 @@ matrix::matrix(const matrix& m) : n(m.n) {
 	}
 }
 
+//destruktor
+matrix::~matrix() {
+	for (int i = 0; i < n; i++) {
+		delete[] data[i];
+	}
+	delete[] data;
+}
+
