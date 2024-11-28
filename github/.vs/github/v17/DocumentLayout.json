@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\gagab\\Desktop\\GitHub-Copilot\\github\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{88A5052E-54F3-48BC-8386-CD6CFBC39EEE}|github.vcxproj|C:\\Users\\gagab\\Desktop\\GitHub-Copilot\\github\\matrix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{88A5052E-54F3-48BC-8386-CD6CFBC39EEE}|github.vcxproj|solutionrelative:matrix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{88A5052E-54F3-48BC-8386-CD6CFBC39EEE}|github.vcxproj|C:\\Users\\gagab\\Desktop\\GitHub-Copilot\\github\\matrix.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{88A5052E-54F3-48BC-8386-CD6CFBC39EEE}|github.vcxproj|solutionrelative:matrix.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88A5052E-54F3-48BC-8386-CD6CFBC39EEE}|github.vcxproj|C:\\Users\\gagab\\Desktop\\GitHub-Copilot\\github\\matrix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{88A5052E-54F3-48BC-8386-CD6CFBC39EEE}|github.vcxproj|solutionrelative:matrix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{88A5052E-54F3-48BC-8386-CD6CFBC39EEE}|github.vcxproj|C:\\Users\\gagab\\Desktop\\GitHub-Copilot\\github\\github.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -34,31 +34,30 @@
               "RelativeToolTip": "github.cpp",
               "ViewState": "AgIAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-27T20:09:16.275Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T20:09:16.275Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "matrix.cpp",
               "DocumentMoniker": "C:\\Users\\gagab\\Desktop\\GitHub-Copilot\\github\\matrix.cpp",
               "RelativeDocumentMoniker": "matrix.cpp",
               "ToolTip": "C:\\Users\\gagab\\Desktop\\GitHub-Copilot\\github\\matrix.cpp",
               "RelativeToolTip": "matrix.cpp",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAB0AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-27T20:49:06.192Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "matrix.h",
               "DocumentMoniker": "C:\\Users\\gagab\\Desktop\\GitHub-Copilot\\github\\matrix.h",
               "RelativeDocumentMoniker": "matrix.h",
               "ToolTip": "C:\\Users\\gagab\\Desktop\\GitHub-Copilot\\github\\matrix.h",
               "RelativeToolTip": "matrix.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABcAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-27T20:49:24.262Z",
               "EditorCaption": ""
