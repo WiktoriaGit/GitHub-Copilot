@@ -18,7 +18,7 @@ public:
 	
 	//metody
 	matrix& alokuj(int size); //alokacja pamieci
-	matrix& wstaw(int i, int j, int value); //wstawianie wartosci
+	matrix& wstaw(int x, int y, int wartosc); //wstawianie wartosci
 	int getValue(int i, int j); //pobieranie wartosci
 	matrix& transpose(); //transponowanie macierzy
 	matrix& randomize(); //losowanie wype³nianie macierzy

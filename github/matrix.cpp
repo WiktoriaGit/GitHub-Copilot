@@ -56,5 +56,13 @@ matrix& matrix::alokuj(int size) {
 	return *this;
 }
 
+//wstawianie wartosci
+matrix& matrix::wstaw(int x, int y, int wartosc) {
+	if (x >= 0 && x < n && y >= 0 && y < n){
+		data[x][y] = wartosc;
+}
+return *this;
+	}
+
 
 
