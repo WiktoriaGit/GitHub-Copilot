@@ -20,7 +20,7 @@ public:
 	matrix& alokuj(int size); //alokacja pamieci
 	matrix& wstaw(int x, int y, int wartosc); //wstawianie wartosci
 	int pokaz(int x, int y); //pobieranie wartosci
-	matrix& transpose(); //transponowanie macierzy
+	matrix& odwroc(); //odracanie macierzy
 	matrix& randomize(); //losowanie wype³nianie macierzy
 	matrix& randomize(int x); //losowanie wype³nianie okreslonej liczby elementow
 	matrix& diagonal(int* t); // wype³nienie przekatnej

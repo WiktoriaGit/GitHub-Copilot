@@ -69,5 +69,14 @@ int matrix::pokaz(int x, int y) {
 	if (x >= 0 && x < n && y >= 0 && y < n) {
 		return data[x][y];
 	}
+}
 
-
+//odracanie macierzy
+	matrix& matrix::odwroc() {
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < i; j++) {
+				swap(data[i][j], data[j][i]);
+			}
+		}
+		return *this;
+	}
