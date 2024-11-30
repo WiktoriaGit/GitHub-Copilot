@@ -26,11 +26,11 @@ public:
 	matrix& diagonalna(int* t); // wype³nienie przekatnej
 	matrix& diagonalna_k(int k, int* t); // wype³nienie przek¹tnej przesuniêtej o k
 	matrix& kolumna(int x, int* t); // wype³nienie kolumny
-	matrix& row(int y, int* t); // wype³nienie wiersza
-	matrix& mainDiagonal(); // pobieranie g³ównej przek¹tnej
-	matrix& belowDiagonal(); // elementy pod przek¹tn¹
-	matrix& aboveDiagonal(); // elementy nad przek¹tn¹
-	matrix& checkerboard(); // szachownica
+	matrix& wiersz(int y, int* t); // wype³nienie wiersza
+	matrix& przekatna(); // pobieranie g³ównej przek¹tnej
+	matrix& pod_przekatna(); // elementy pod przek¹tn¹
+	matrix& nad_przekatna(); // elementy nad przek¹tn¹
+	matrix& szachownica(); // szachownica
 
 	//operatory
 	matrix& operator+(matrix& m);
