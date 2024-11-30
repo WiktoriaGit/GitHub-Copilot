@@ -21,11 +21,11 @@ public:
 	matrix& wstaw(int x, int y, int wartosc); //wstawianie wartosci
 	int pokaz(int x, int y); //pobieranie wartosci
 	matrix& odwroc(); //odracanie macierzy
-	matrix& randomize(); //losowanie wype³nianie macierzy
-	matrix& randomize(int x); //losowanie wype³nianie okreslonej liczby elementow
-	matrix& diagonal(int* t); // wype³nienie przekatnej
-	matrix& diagonal_k(int k, int* t); // wype³nienie przek¹tnej przesuniêtej o k
-	matrix& column(int x, int* t); // wype³nienie kolumny
+	matrix& losuj(); //losowanie wype³nianie macierzy
+	matrix& losuj(int x); //losowanie wype³nianie okreslonej liczby elementow
+	matrix& diagonalna(int* t); // wype³nienie przekatnej
+	matrix& diagonalna_k(int k, int* t); // wype³nienie przek¹tnej przesuniêtej o k
+	matrix& kolumna(int x, int* t); // wype³nienie kolumny
 	matrix& row(int y, int* t); // wype³nienie wiersza
 	matrix& mainDiagonal(); // pobieranie g³ównej przek¹tnej
 	matrix& belowDiagonal(); // elementy pod przek¹tn¹
