@@ -1,0 +1,141 @@
+\doxysection{github/matrix.cpp File Reference}
+\hypertarget{matrix_8cpp}{}\label{matrix_8cpp}\index{github/matrix.cpp@{github/matrix.cpp}}
+
+
+Implementacja konstruktorów i destruktora klasy matrix.  
+
+
+{\ttfamily \#include "{}matrix.\+h"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmatrix}{matrix}} \mbox{\hyperlink{matrix_8cpp_a711f1d52f70d592dcf2670c3fc7598a9}{operator+}} (int a, \mbox{\hyperlink{classmatrix}{matrix}} \&m)
+\begin{DoxyCompactList}\small\item\em Dodawanie liczby do wszystkich elementów macierzy (operator globalny). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmatrix}{matrix}} \mbox{\hyperlink{matrix_8cpp_a4cdb71e0bc2dd8f4f07302f5bb1056a6}{operator\texorpdfstring{$\ast$}{*}}} (int a, \mbox{\hyperlink{classmatrix}{matrix}} \&m)
+\begin{DoxyCompactList}\small\item\em Mno¿enie wszystkich elementów macierzy przez liczbê (operator globalny). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmatrix}{matrix}} \mbox{\hyperlink{matrix_8cpp_ac7bc63f68e73ed544fc255561975cfac}{operator-\/}} (int a, \mbox{\hyperlink{classmatrix}{matrix}} \&m)
+\begin{DoxyCompactList}\small\item\em Odejmowanie liczby od wszystkich elementów macierzy (operator globalny). \end{DoxyCompactList}\item 
+ostream \& \mbox{\hyperlink{matrix_8cpp_aa442bbfa8b6a989f4d16cae01d99c78d}{operator$<$$<$}} (ostream \&o, const \mbox{\hyperlink{classmatrix}{matrix}} \&m)
+\begin{DoxyCompactList}\small\item\em Wypisuje macierz na standardowe wyjœcie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementacja konstruktorów i destruktora klasy matrix. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{matrix_8cpp_a4cdb71e0bc2dd8f4f07302f5bb1056a6}\index{matrix.cpp@{matrix.cpp}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!matrix.cpp@{matrix.cpp}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}}
+{\footnotesize\ttfamily \label{matrix_8cpp_a4cdb71e0bc2dd8f4f07302f5bb1056a6} 
+\mbox{\hyperlink{classmatrix}{matrix}} operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}\item[{int}]{a}{, }\item[{\mbox{\hyperlink{classmatrix}{matrix}} \&}]{m}{}\end{DoxyParamCaption})}
+
+
+
+Mno¿enie wszystkich elementów macierzy przez liczbê (operator globalny). 
+
+Mno¿y macierz przez skalar.
+
+Tworzy now¹ macierz, której ka¿dy element jest wynikiem pomno¿enia liczby {\ttfamily a} przez odpowiadaj¹cy element macierzy {\ttfamily m}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Liczba, przez któr¹ mno¿ymy ka¿dy element macierzy. \\
+\hline
+{\em m} & Macierz, której elementy s¹ mno¿one przez liczbê {\ttfamily a}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nowa macierz, bêd¹ca wynikiem mno¿enia. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::bad\+\_\+alloc} & Jeœli alokacja pamiêci dla wyniku siê nie powiedzie. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{matrix_8cpp_a711f1d52f70d592dcf2670c3fc7598a9}\index{matrix.cpp@{matrix.cpp}!operator+@{operator+}}
+\index{operator+@{operator+}!matrix.cpp@{matrix.cpp}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \label{matrix_8cpp_a711f1d52f70d592dcf2670c3fc7598a9} 
+\mbox{\hyperlink{classmatrix}{matrix}} operator+ (\begin{DoxyParamCaption}\item[{int}]{a}{, }\item[{\mbox{\hyperlink{classmatrix}{matrix}} \&}]{m}{}\end{DoxyParamCaption})}
+
+
+
+Dodawanie liczby do wszystkich elementów macierzy (operator globalny). 
+
+Dodaje skalar do macierzy.
+
+Tworzy now¹ macierz, której ka¿dy element jest sum¹ liczby {\ttfamily a} i odpowiadaj¹cego elementu macierzy {\ttfamily m}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Liczba do dodania do ka¿dego elementu macierzy. \\
+\hline
+{\em m} & Macierz, do której elementów dodawana jest liczba {\ttfamily a}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nowa macierz, bêd¹ca wynikiem dodawania. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::bad\+\_\+alloc} & Jeœli alokacja pamiêci dla wyniku siê nie powiedzie. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{matrix_8cpp_ac7bc63f68e73ed544fc255561975cfac}\index{matrix.cpp@{matrix.cpp}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!matrix.cpp@{matrix.cpp}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \label{matrix_8cpp_ac7bc63f68e73ed544fc255561975cfac} 
+\mbox{\hyperlink{classmatrix}{matrix}} operator-\/ (\begin{DoxyParamCaption}\item[{int}]{a}{, }\item[{\mbox{\hyperlink{classmatrix}{matrix}} \&}]{m}{}\end{DoxyParamCaption})}
+
+
+
+Odejmowanie liczby od wszystkich elementów macierzy (operator globalny). 
+
+Odejmuje skalar od macierzy.
+
+Tworzy now¹ macierz, której ka¿dy element jest ró¿nic¹ liczby {\ttfamily a} i odpowiadaj¹cego elementu macierzy {\ttfamily m}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Liczba, od której odejmujemy ka¿dy element macierzy. \\
+\hline
+{\em m} & Macierz, której elementy s¹ odejmowane od liczby {\ttfamily a}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nowa macierz, bêd¹ca wynikiem odejmowania. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::bad\+\_\+alloc} & Jeœli alokacja pamiêci dla wyniku siê nie powiedzie. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{matrix_8cpp_aa442bbfa8b6a989f4d16cae01d99c78d}\index{matrix.cpp@{matrix.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!matrix.cpp@{matrix.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily \label{matrix_8cpp_aa442bbfa8b6a989f4d16cae01d99c78d} 
+ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{o}{, }\item[{const \mbox{\hyperlink{classmatrix}{matrix}} \&}]{m}{}\end{DoxyParamCaption})}
+
+
+
+Wypisuje macierz na standardowe wyjœcie. 
+
+Wypisuje macierz do strumienia wyjœciowego.
+
+Ka¿dy element macierzy jest wypisywany w odpowiedniej pozycji (wiersz po wierszu), oddzielony spacjami. Wiersze s¹ oddzielone znakami nowej linii.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & Strumieñ wyjœciowy, do którego macierz zostanie wypisana. \\
+\hline
+{\em m} & Macierz do wypisania. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referencja do strumienia wyjœciowego. 
+\end{DoxyReturn}
