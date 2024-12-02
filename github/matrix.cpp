@@ -201,17 +201,22 @@ int matrix::pokaz(int x, int y) {
 		return *wynik;
 	}
 
-	//mno¿enie macierzy
+    //mno¿enie macierzy
 	matrix& matrix::operator*(matrix& m) {
-		matrix* wynik = new matrix(n);
+		if (n != m.n) {
+			cerr << "Matrix dimensions must match for multiplication!" << endl;
+			throw invalid_argument("Matrix dimensions mismatch");
+		}
+
+		matrix* result = new matrix(n);
+
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
-				for (int k = 0; k < n; k++) {
-					wynik->data[i][j] += data[i][k] * m.data[k][j];
-				}
+				result->data[i][j] = data[i][j] * m.data[i][j];
 			}
 		}
-		return *wynik;
+
+		return *result;
 	}
 
 	//dodawanie liczby
